@@ -36,9 +36,6 @@ class Preprocessor:
         for line in tqdm(content, desc='Processing dialogues for {}'.format(mode)):
             new_data = self.parse_data(line, mode)
             res.append(new_data)
-        # 1214为验证集数据
-        # delete_ids = [1544, 659, 1585, 597, 1889, 689, 1668, 1214]
-        # res = [data for data in res if data['doc_id'] not in delete_ids]
         return res
 
     def align_index_with_list(self, sentences):
