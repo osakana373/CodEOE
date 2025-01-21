@@ -163,17 +163,12 @@ class Run_eval:
     
     def post_process_for_english_text(self, line, key='triggers'):
         if key in ['triggers', 'arguments', 'opinions']:
-            # res = [tuple([' '.join(w[-1])]) for w in line[key]]
             res = [tuple([w[-1]]) for w in line[key]]
             return list(OrderedDict.fromkeys(res))
         if key in ['trigger-arg', 'trigger-opinion']:
-            # res = [tuple([' '.join(w[4:])]) for w in line[key]]
-            # res = [tuple([' '.join(w[-2]), ' '.join(w[-1])]) for w in line[key]]
             res = [tuple([w[-2], w[-1]]) for w in line[key]]
             return list(OrderedDict.fromkeys(res))
         if key == 'tri_opi_senti_pairs':
-            # res = [tuple([' '.join(w[4:])]) for w in line[key]]
-            # res = [tuple([' '.join(w[-3]), ' '.join(w[-2]), ' '.join(w[-1])]) for w in line[key]]
             res = [tuple([w[-3], w[-2], w[-1]]) for w in line[key]]
             return list(OrderedDict.fromkeys(res))
 
