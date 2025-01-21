@@ -177,7 +177,7 @@ class BertWordPair(nn.Module):
         if self.training:
             sequence_output = self.dropout(sequence_output)
 
-        # grid-tagging部分
+        # grid-tagging
         sequence_output = self.merge_sentence(sequence_output, input_masks, document_length)
         loss0, tags0 = self.classify_matrix(kwargs, sequence_output, 'ent')
         loss1, tags1 = self.classify_matrix(kwargs, sequence_output, 'rel')
