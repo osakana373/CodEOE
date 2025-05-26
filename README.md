@@ -1,7 +1,7 @@
 # CodEOE
 
 ## Overview
-In this work, we propose a new task named CodEOE, which aims to jointly extract Events and Opinions from multiple documents. More details about the task can be found in our paper.
+In this work, we propose a new task named CodEOE, which aims to jointly extract Events and Opinions from multiple documents. More details about the task can be found in our paper. The full dataset and code will be available to the public upon publishing.
 
 <p align="center">
 <img src="./sample/example.png" width="40%">
