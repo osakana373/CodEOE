@@ -1,5 +1,7 @@
 # CodEOE
 
+Data and code for paper "CODEOE: A BENCHMARK FOR JOINTLY EXTRACTING CROSS-DOCUMENT EVENTS AND OPINIONS FROM SOCIAL MEDIA".
+
 ## Overview
 In this work, we propose a new task named CodEOE, which aims to jointly extract Events and Opinions from multiple documents. More details about the task can be found in our paper. The full dataset and code will be available to the public upon publishing.
 
