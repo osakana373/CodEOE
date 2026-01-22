@@ -6,7 +6,7 @@ Data and code for paper "CODEOE: A BENCHMARK FOR JOINTLY EXTRACTING CROSS-DOCUME
 In this work, we propose a new task named CodEOE, which aims to jointly extract Events and Opinions from multiple documents. More details about the task can be found in our paper.
 
 <p align="center">
-<img src="./sample/example.png" width="40%">
+<img src="./data/example.png" width="40%">
 </p>
 
 ## CodEOE Data
